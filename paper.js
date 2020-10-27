@@ -13,8 +13,9 @@ class Paper{
     display(){
       var pos=this.body.position;
       fill("white")
-      ellipseMode(RADIUS)
-      ellipse(pos.x,pos.y,10,10)
+      imageMode(CENTER)    
+      image(this.image,pos.x,pos.y,10,10)
+   
     }
             
 }
