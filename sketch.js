@@ -50,7 +50,7 @@ function draw() {
 
 function keyPressed(){
   if(keyCode===UP_ARROW){
-Matter.Body.applyForce(paperBall.body,paperBall.body.position,{x:18,y:-18})
+Matter.Body.applyForce(paperBall.body,paperBall.body.position,{x:25,y:-25})
 Matter.Body.setStatic(paperBall.body,false)  
   }
 }
