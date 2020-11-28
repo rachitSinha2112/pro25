@@ -14,7 +14,7 @@ class Paper{
       var pos=this.body.position;
       fill("white")
       imageMode(CENTER)    
-      image(this.image,pos.x,pos.y,20,20)
+      image(this.image,pos.x,pos.y,30,30)
    
     }
             
