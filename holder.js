@@ -13,7 +13,7 @@ var holder_option={
 display(){
     var pos=this.body.position;
     imageMode(CENTER)    
-    image(this.image,pos.x,pos.y,30,30)
+    image(this.image,pos.x,pos.y,width,height)
     
 }
 }
