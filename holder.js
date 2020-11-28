@@ -12,8 +12,8 @@ var holder_option={
 }
 display(){
     var pos=this.body.position;
-    rectMode(CENTER)    
-    fill("white");
+    imageMode(CENTER)    
+    
     rect(pos.x,pos.y,this.width,this.height)
     
 }
