@@ -35,7 +35,7 @@ function setup() {
 function draw() {
   Engine.update(engine);
 
-   background("black");
+   background("brown");
 
    
   holder1.display();
