@@ -20,8 +20,8 @@ function setup() {
 	groundSprite.shapeColor=color(255)  
 
  holder1=new Holder(870,450,100,20);
- holder2=new Holder(810,410,20,100);
- holder3=new Holder(910,410,20,100);
+ //holder2=new Holder(810,410,20,100);
+ //holder3=new Holder(910,410,20,100);
 
  paperBall=new Paper(100,450)
 
@@ -39,8 +39,8 @@ function draw() {
 
    
   holder1.display();
-  holder2.display();
-  holder3.display();
+  //holder2.display();
+  //holder3.display();
 
   paperBall.display();   
 
