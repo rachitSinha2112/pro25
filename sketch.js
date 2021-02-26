@@ -1,4 +1,4 @@
-var groundSprite;   
+var groundSprite,dustbin;   
 const Engine = Matter.Engine;
    const World = Matter.World;
 const Bodies = Matter.Bodies;
@@ -6,7 +6,7 @@ const Body = Matter.Body;
 
 function preload()
 {
-	
+dustbin=loadImage("dustbingreen.png");	
 }
 
 function setup() {
@@ -20,8 +20,8 @@ function setup() {
 	groundSprite.shapeColor=color(255)  
 
  holder1=new Holder(870,450,100,20);
- //holder2=new Holder(810,410,20,100);
- //holder3=new Holder(910,410,20,100);
+ holder2=new Holder(810,410,20,100);
+ holder3=new Holder(910,410,20,100);
 
  paperBall=new Paper(100,450)
 
@@ -35,12 +35,12 @@ function setup() {
 function draw() {
   Engine.update(engine);
 
-   background("white");
-
+  background("white");
+holder1.addImage(dustbin)
    
   holder1.display();
-  //holder2.display();
-  //holder3.display();
+  holder2.display();
+  holder3.display();
 
   paperBall.display();   
 
