@@ -19,9 +19,11 @@ function setup() {
   groundSprite=createSprite(width/2, height-35, width,10);
 	groundSprite.shapeColor=color(255)  
 
- holder1=new Holder(870,450,100,20);
- holder2=new Holder(810,410,20,100);
- holder3=new Holder(910,410,20,100);
+ holder1=new Holder(860,450,100,5);
+ 
+ 
+ holder2=new Holder(820,410,5,100);
+ holder3=new Holder(900,410,5,100);
 
  paperBall=new Paper(100,450)
 
@@ -35,7 +37,7 @@ function setup() {
 function draw() {
   Engine.update(engine);
 
-  background("white");
+  background(184,237,241);
 
    
   holder1.display();
@@ -43,17 +45,17 @@ function draw() {
   holder3.display();
 
   paperBall.display();   
-image(dustbin,910,410,100,100)
+image(dustbin,860,410,100,100);
+
   drawSprites();
  
 }
 
 function keyPressed(){
   if(keyCode===UP_ARROW){
-Matter.Body.applyForce(paperBall.body,paperBall.body.position,{x:25,y:-25})
+Matter.Body.applyForce(paperBall.body,paperBall.body.position,{x:75,y:-75})
 Matter.Body.setStatic(paperBall.body,false)  
   }
 }
-
 
 
