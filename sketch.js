@@ -57,5 +57,3 @@ Matter.Body.applyForce(paperBall.body,paperBall.body.position,{x:75,y:-75})
 Matter.Body.setStatic(paperBall.body,false)  
   }
 }
-
-
