@@ -43,7 +43,7 @@ holder1.addImage(dustbin)
   holder3.display();
 
   paperBall.display();   
-
+image(dustbin,910,410,100,100)
   drawSprites();
  
 }
