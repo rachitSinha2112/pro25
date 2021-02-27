@@ -27,8 +27,6 @@ function setup() {
 
  paperBall=new Paper(100,450)
 
- //ground = Bodies.rectangle(900, 400, width, 10 , {isStatic:false} );
- //World.add(world, ground);
 
  Engine.run(engine);
   
