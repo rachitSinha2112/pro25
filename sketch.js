@@ -36,7 +36,7 @@ function draw() {
   Engine.update(engine);
 
   background("white");
-holder1.addImage(dustbin)
+
    
   holder1.display();
   holder2.display();
